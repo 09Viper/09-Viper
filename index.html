@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Site not found
   </title>
-  <link rel="icon" type="image/x-icon" href="logo.png" />
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/83/83716.png" />
   <style>
     * {
       margin: 0;
@@ -15,41 +15,80 @@
     }
 
     body {
-      display: none;
-      background: url(https://www.teahub.io/photos/full/194-1941263_4k-hd-desktop-wallpaper-nature-hd-wallpapers-for.jpg);
+      /* background: url(https://www.teahub.io/photos/full/194-1941263_4k-hd-desktop-wallpaper-nature-hd-wallpapers-for.jpg);
+      background-size: cover; */
+      /* background-repeat: no-repeat; */
     }
 
-    .head {
-      text-align: center;
-      color: white;
-      margin: 9px;
+    header img {
+      width: 7vh;
+      margin-top: 2vh;
+      margin-left: 2vh;
     }
-    .list{
-      text-align: center;
-      list-style-type: disc;
+
+    header nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      /* background-color: pink; */
+    }
+
+    nav li {
+      list-style-type: none;
+
+    }
+
+    nav li a {
+      margin: 2vh;
+      text-decoration: none;
+      color: rgb(3, 3, 3);
+    }
+
+
+    .nav2 {
+      /* background-color: yellow; */
+      text-align: right;
+      margin-right: 1vh;
+      width: 50%;
+    }
+
+    header button {
+      border: 2px solid rgb(3, 3, 3);
+      cursor: pointer;
+      border-radius: 9px;
+      height: 4vh;
+      width: 7vh;
+      margin-left: 2vh;
+    }
+
+    header input {
+      border-radius: 9px;
+      border: 2px solid rgb(2, 2, 2);
     }
   </style>
 
 <body>
-  <div class="head">
-    <h1>Projects</h1>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/83/83716.png" alt="Can't load image"></a>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="project.html">Projects</a></li>
+      </ul>
+      <div class="nav2">
+        <input type="text">
+        <button>search</button>
+    </nav>
 
-  <div class="list">
-    <ul>
-      <li><a href="Calculator/index.html" target="_blank">
-          <h3>Web calc<h3>
-        </a></li>
-      <li>
-        <a href="Spotify Clone/index.html" target="_blank">
-          <h3>Spotify Clone <h3>
-        </a>
-      </li>
-      <li><a href="index.html" target="_blank">
-          <h3>Try<h3>
-        </a></li>
-    </ul>
-  </div>
+    </div>
+  </header>
 </body>
 
 </html>
