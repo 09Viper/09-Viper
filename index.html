@@ -9,19 +9,25 @@
   </title>
   <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/83/83716.png" />
   <style>
+    header {
+      position: sticky;
+      top: 0;
+    }
+
+    body{
+      display: none;
+    }
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    body{
-      display: none;
-    }
     header img {
       width: 7vh;
       margin-top: 2vh;
-      margin-left: 1.4vh;
+      margin-left: 13vh;
     }
 
     nav {
@@ -29,9 +35,23 @@
       align-items: center;
     }
 
-    nav .nav1 {
-      width: 50%;
+    nav .logo {
+      width: 10%;
+      display: flex;
+      align-items: center;
+      /* background-color: yellow; */
     }
+
+    nav .nav1 {
+      width: 40%;
+      /* background-color: aqua; */
+    }
+
+    nav .nav2 {
+      width: 50%;
+      /* background-color: pink; */
+    }
+
 
     nav .nav1 ul {
       display: flex;
@@ -47,16 +67,13 @@
     }
 
     nav .nav1 .my-name a {
-      margin-left: 4vh;
+      margin-left: 5vh;
       color: blueviolet;
       font-weight: 600;
       font-size: 3vh;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
 
-    nav .nav2 {
-      width: 50%;
-    }
 
     nav .nav2 ul {
       display: flex;
@@ -86,11 +103,15 @@
     .nav2 button {
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-weight: 400;
+      text-align: center;
       cursor: pointer;
       padding: 8px 12px;
       border-radius: 9px;
       background-color: blueviolet;
       color: white;
+      opacity: 0.7;
+      cursor: not-allowed;
+      border: 1px solid black;
     }
 
     .nav2 button:hover {
@@ -101,7 +122,30 @@
     }
 
     .nav2 .button2 {
-      margin: 0 2vh;
+      margin: 0 12vh 0 3vh;
+    }
+
+    main {
+      min-height: calc(80vh);
+      background-color: rgb(117, 117, 117);
+      margin-top: 1vh;
+    }
+
+    .chat img {
+      width: 11vh;
+      position: fixed;
+      top: 540px;
+      left: 1230px;
+      cursor: pointer;
+      opacity: 100%;
+    }
+
+    .chat img:hover {
+      opacity: 70%;
+    }
+
+    footer {
+      background-color: khaki;
     }
   </style>
 </head>
@@ -109,25 +153,40 @@
 <body>
   <header>
     <nav>
+      <div class="logo">
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/83/83716.png" alt="Can't load image"></a>
+      </div>
       <div class="nav1">
         <ul>
-          <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/83/83716.png"
-              alt="Can't load image"></a>
           <li class="my-name"><a href="index.html">Partik Gyawali</a></li>
         </ul>
       </div>
       <div class="nav2">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="project.html">Projects</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
           <button class="button1">Login</button>
           <button class="button2">Signup</button>
         </ul>
+      </div>
     </nav>
-    </div>
   </header>
+
+  <div class="chat">
+    <img src="https://www.logolynx.com/images/logolynx/cd/cdd59a3d7288df84335a3c5a61b1652d.png" alt="can't load image">
+  </div>
+
+  <main>
+    48*48
+  </main>
+  <footer>
+
+    <div class="icon"><img src="" alt="Can't load image"></div>
+    <div class="icon"><img src="" alt="Can't load image"></div>
+    <div class="icon"><img src="" alt="Can't load image"></div>
+  </footer>
 </body>
 
 </html>
